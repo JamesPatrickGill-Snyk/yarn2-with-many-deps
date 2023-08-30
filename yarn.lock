@@ -6203,6 +6203,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/bson@npm:1.x || 4.0.x":
+  version: 4.0.5
+  resolution: "@types/bson@npm:4.0.5"
+  dependencies:
+    "@types/node": "*"
+  checksum: 8/f6c74a68eec836010170e7091399b45fe39e2f7724372441cc00a0fbd0b9f44d901688504174d558edbf220922fa0c7c52fbc4aa0f2136194fa713101b8f2ec9
+  languageName: node
+  linkType: hard
+
 "@types/bytebuffer@npm:^5.0.40":
   version: 5.0.42
   resolution: "@types/bytebuffer@npm:5.0.42"
@@ -14725,14 +14734,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"connect-mongo@npm:^4.4.1":
-  version: 4.4.1
-  resolution: "connect-mongo@npm:4.4.1"
+"connect-mongo@npm:^4.6.0":
+  version: 4.6.0
+  resolution: "connect-mongo@npm:4.6.0"
   dependencies:
     debug: ^4.3.1
     kruptein: ^3.0.0
-    mongodb: 3.6.5
-  checksum: 14a26b764dbba404bf6a3c8c5e4a74c26818d920db752cf58179625a43d763fbd4571f86641afb9bccfa665872c70b889c658149d27137791cb50ba29bdb0ed0
+  peerDependencies:
+    mongodb: ^4.1.0
+  checksum: 8/be95b40bf52b8702b07ffde25d6ea5bc72cdb6a77ca82574e73f2519fa3c704681ba3ae631094d5786b480f897eec6318ee1154243c269376816b009530da871
   languageName: node
   linkType: hard
 
@@ -22227,22 +22237,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@^1.0.0#builtin<compat/fsevents>, fsevents@patch:fsevents@^1.2.7#builtin<compat/fsevents>":
+"fsevents@patch:fsevents@^1.0.0#~builtin<compat/fsevents>, fsevents@patch:fsevents@^1.2.7#~builtin<compat/fsevents>":
   version: 1.2.13
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#builtin<compat/fsevents>::version=1.2.13&hash=11e9ea"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=1cc4b2"
   dependencies:
     bindings: ^1.5.0
     nan: ^2.12.1
-  checksum: 7bc048c164eb72f91b18ba7cd2ba30679a0afe57e9cd6352eac4bdbc4ddd4ca2ea98674d0bd3a80e96427469adc433c13532494b36aea40fceab36e198982182
+  checksum: 8/b264407498db2cfdcc2a05287334a4160c985a88e4a989e2f2f8dcc6afc8b04a4fcd82c797266442452e11c1fb07d7747d138b078fe4bb1f8f4fd2a6f2484d7e
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@^2.1.2#builtin<compat/fsevents>, fsevents@patch:fsevents@^2.1.3#builtin<compat/fsevents>, fsevents@patch:fsevents@^2.3.2#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#builtin<compat/fsevents>":
+"fsevents@patch:fsevents@^2.1.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@^2.1.3#~builtin<compat/fsevents>, fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#builtin<compat/fsevents>::version=2.3.2&hash=11e9ea"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=1cc4b2"
   dependencies:
     node-gyp: latest
-  checksum: 7b25d9251aefe433d508a0eb614217f0495ae05a9e8af15f7dbf9998e08c4e675acd1cf32361e0fcf71d917d9e8c4b76301fdc72a1ec1105a3ea0994f5e15a8d
+  checksum: 8/78db9daf1f6526a49cefee3917cc988f62dc7f25b5dd80ad6de4ffc4af7f0cab7491ac737626ff53e482a111bc53aac9e411fe3602458eca36f6a003ecf69c16
   languageName: node
   linkType: hard
 
@@ -33037,14 +33047,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongodb@npm:3.6.5":
-  version: 3.6.5
-  resolution: "mongodb@npm:3.6.5"
+"mongodb@npm:3.7.4, mongodb@npm:^3.6.10":
+  version: 3.7.4
+  resolution: "mongodb@npm:3.7.4"
   dependencies:
     bl: ^2.2.1
     bson: ^1.1.4
     denque: ^1.4.1
-    require_optional: ^1.0.1
+    optional-require: ^1.1.8
     safe-buffer: ^5.1.2
     saslprep: ^1.0.0
   dependenciesMeta:
@@ -33063,37 +33073,7 @@ __metadata:
       optional: true
     snappy:
       optional: true
-  checksum: 6a838b79e104cee243e2ed10a5ded90490bb4db687ca1f1cabeab6c578441b1db64136fd33bad7112ca4a09e60a99a3b039d1c11e515521ffffa66ed91fb3148
-  languageName: node
-  linkType: hard
-
-"mongodb@npm:3.6.6, mongodb@npm:^3.6.6":
-  version: 3.6.6
-  resolution: "mongodb@npm:3.6.6"
-  dependencies:
-    bl: ^2.2.1
-    bson: ^1.1.4
-    denque: ^1.4.1
-    optional-require: ^1.0.2
-    safe-buffer: ^5.1.2
-    saslprep: ^1.0.0
-  dependenciesMeta:
-    saslprep:
-      optional: true
-  peerDependenciesMeta:
-    aws4:
-      optional: true
-    bson-ext:
-      optional: true
-    kerberos:
-      optional: true
-    mongodb-client-encryption:
-      optional: true
-    mongodb-extjson:
-      optional: true
-    snappy:
-      optional: true
-  checksum: 7c711f82269a98fc331e5d52d3ba02167446d7a44c54f0ab26072d708a804c5082e201abae85dcf01154ac73572e4e7f80f32c0b632b72e92e8e65857f553062
+  checksum: 8/e9b4e932f40029d2fc7b2247737f4fc6fc8951c0ac86530e19d305b58dc8a8251bb42a73af2e9da14fd606856bf240c80951fec9a870719481c0cf2d78327547
   languageName: node
   linkType: hard
 
@@ -33106,23 +33086,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mongoose@npm:5.12.7, mongoose@npm:^5.12.6":
-  version: 5.12.7
-  resolution: "mongoose@npm:5.12.7"
+"mongoose@npm:5.13.20, mongoose@npm:^5.13.3":
+  version: 5.13.20
+  resolution: "mongoose@npm:5.13.20"
   dependencies:
+    "@types/bson": 1.x || 4.0.x
     "@types/mongodb": ^3.5.27
     bson: ^1.1.4
     kareem: 2.3.2
-    mongodb: 3.6.6
+    mongodb: 3.7.4
     mongoose-legacy-pluralize: 1.0.2
-    mpath: 0.8.3
+    mpath: 0.8.4
     mquery: 3.2.5
     ms: 2.1.2
+    optional-require: 1.0.x
     regexp-clone: 1.0.0
     safe-buffer: 5.2.1
     sift: 13.5.2
     sliced: 1.0.1
-  checksum: 0f9403ac8fc773e29373bb184a291dbbe2162144e0d2ed8a1ad351947943b343bc4214fce528e503298b1663030273332a13b945811fbd46fc988480997162f6
+  checksum: 8/960326fc34d0d8b5c7cf9e97148e1a286aa13b1df96f51c2af83fa64d4e586625616c370ac69f8a64fc05bf3ec64ada0a5b79c85a03a29866ef5ae62d16cbde9
   languageName: node
   linkType: hard
 
@@ -33173,10 +33155,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mpath@npm:0.8.3":
-  version: 0.8.3
-  resolution: "mpath@npm:0.8.3"
-  checksum: 6c129da222169bcf2eb28ae73abca2a8a32c3c659748efd496308aed21c7dca7a9a923de53a5a1df3d898f5eba74c704fdf352ca68e5ecb602d2352a9d5ab90e
+"mpath@npm:0.8.4":
+  version: 0.8.4
+  resolution: "mpath@npm:0.8.4"
+  checksum: 8/06ad1d443766626fa361b67a4eca9cd4c36a71e475e92e8a5c242dbbc9a911adac00ce971177843b48475356df609f847342548da7701a976a2ab4116135caf0
   languageName: node
   linkType: hard
 
@@ -35383,10 +35365,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"optional-require@npm:^1.0.2":
+"optional-require@npm:1.0.x":
   version: 1.0.3
   resolution: "optional-require@npm:1.0.3"
   checksum: be8556c35b0f6f76ac3b34587f010ad8fc17f69d1afbd5198fb338c785ebbe8e3c96b5f5222a0853b2c8ab7bfe8127a4f4c795e8795d5656e31c8fd693780ba9
+  languageName: node
+  linkType: hard
+
+"optional-require@npm:^1.1.8":
+  version: 1.1.8
+  resolution: "optional-require@npm:1.1.8"
+  dependencies:
+    require-at: ^1.0.6
+  checksum: 8/437db76f713052925185ae80837b593877f75101154e8937f50d33b0b07bd500c214efc9016748642109b6e3e1197eb0513a2963eb06bcf3890f88a2724b1c87
   languageName: node
   linkType: hard
 
@@ -42800,6 +42791,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"require-at@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "require-at@npm:1.0.6"
+  checksum: 8/7753a6ebad99855ef015d5533a787c65e883c94c23371368eebf6f1c7e2a078811013b204823152cbab206a00e825e8e5ca09416fd835a489fa30bf064fbe6d9
+  languageName: node
+  linkType: hard
+
 "require-dir@npm:^1.2.0":
   version: 1.2.0
   resolution: "require-dir@npm:1.2.0"
@@ -42850,16 +42848,6 @@ __metadata:
   version: 2.0.1
   resolution: "require-package-name@npm:2.0.1"
   checksum: bc1b42ecffccc4936256536b12607115a5a6ba5bb6105e6b966fc271a1a2fd6ff2db72b44eb7e8b6366f128d0eead4541597b77d1260f53a61540bb3f074c2d1
-  languageName: node
-  linkType: hard
-
-"require_optional@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "require_optional@npm:1.0.1"
-  dependencies:
-    resolve-from: ^2.0.0
-    semver: ^5.1.0
-  checksum: 2a7cae14fcb0f7aac9e1837bde2edc1e95b2cf635376df09e973151ea735b77f2069e6bf9e1a1c5dd27f052e0b00a477db15807302a1ceeb487307ea61416bee
   languageName: node
   linkType: hard
 
@@ -42956,13 +42944,6 @@ __metadata:
   version: 5.0.0
   resolution: "resolve-from@npm:5.0.0"
   checksum: 0d29fc7012eb21f34d2637fa0602694f60e64c14bf5fbd5395b72f6ea5540a6906cbeef062edefc34c22fd802bfe8ae46ef936e6c4a3f1b1047390f9738dd76f
-  languageName: node
-  linkType: hard
-
-"resolve-from@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "resolve-from@npm:2.0.0"
-  checksum: e2cfa9d4402ceb731ce14f639248c8a8a364db8710ba3360a4492046c6688084235645a4f4004ac7d9acf40bc0644fac6d8c24f9012c7e5773234a7c09d57cb4
   languageName: node
   linkType: hard
 
@@ -43098,40 +43079,40 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@1.1.x#builtin<compat/resolve>":
+"resolve@patch:resolve@1.1.x#~builtin<compat/resolve>":
   version: 1.1.7
-  resolution: "resolve@patch:resolve@npm%3A1.1.7#builtin<compat/resolve>::version=1.1.7&hash=3388aa"
-  checksum: ca4e21815c78134fdb248d2175d98c2ead024c680a3a9c7b8ee13fc8a7f5157e061b13ae29ee07a60e1b9faea33c3740cb88d48d94966d7e94479add70d3f544
+  resolution: "resolve@patch:resolve@npm%3A1.1.7#~builtin<compat/resolve>::version=1.1.7&hash=00b1ff"
+  checksum: 8/3477c7e1cb7c0588764f1c2dbdd84d1f4e98d0ad138485ff280c210ddc252c86735f9e6113cbe9491e24cf3205058fce8a7a1dd1f50370707656dbd895bd3826
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@1.18.1#builtin<compat/resolve>":
+"resolve@patch:resolve@1.18.1#~builtin<compat/resolve>":
   version: 1.18.1
-  resolution: "resolve@patch:resolve@npm%3A1.18.1#builtin<compat/resolve>::version=1.18.1&hash=3388aa"
+  resolution: "resolve@patch:resolve@npm%3A1.18.1#~builtin<compat/resolve>::version=1.18.1&hash=00b1ff"
   dependencies:
     is-core-module: ^2.0.0
     path-parse: ^1.0.6
-  checksum: 9e62d2803ad1ec21b13780cc6a45b72bb7b6525eb5b44f0ede7cde37c00a8eb310c06ebfcc7de7dc10c2234d7d271bc4f1eed9783fb87acac141597cd4efaeec
+  checksum: 8/3a5051499a570cf94d74353d494cacadbfa489107def201f87e26cabd80d000bd8abccbe247783b86b06d86ce2c646eee5c55900c71cbf1ad2043a67a92b0242
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.1.4#builtin<compat/resolve>, resolve@patch:resolve@^1.1.5#builtin<compat/resolve>, resolve@patch:resolve@^1.1.6#builtin<compat/resolve>, resolve@patch:resolve@^1.1.7#builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#builtin<compat/resolve>, resolve@patch:resolve@^1.11.0#builtin<compat/resolve>, resolve@patch:resolve@^1.11.1#builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#builtin<compat/resolve>, resolve@patch:resolve@^1.15.1#builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#builtin<compat/resolve>, resolve@patch:resolve@^1.18.1#builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#builtin<compat/resolve>, resolve@patch:resolve@^1.4.0#builtin<compat/resolve>, resolve@patch:resolve@^1.5.0#builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#builtin<compat/resolve>, resolve@patch:resolve@^1.9.0#builtin<compat/resolve>":
+"resolve@patch:resolve@^1.1.4#~builtin<compat/resolve>, resolve@patch:resolve@^1.1.5#~builtin<compat/resolve>, resolve@patch:resolve@^1.1.6#~builtin<compat/resolve>, resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.11.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.11.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.15.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.18.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.4.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.5.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.9.0#~builtin<compat/resolve>":
   version: 1.20.0
-  resolution: "resolve@patch:resolve@npm%3A1.20.0#builtin<compat/resolve>::version=1.20.0&hash=3388aa"
+  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=00b1ff"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
-  checksum: c4a515b76026806b5b26513fc7bdb80458c532bc91c02ef45ac928d1025585f93bec0b904be39c02131118a37ff7e3f9258f1526850b025d2ec0948bb5fd03d0
+  checksum: 8/bed00be983cd20a8af0e7840664f655c4b269786dbd9595c5f156cd9d8a0050e65cdbbbdafc30ee9b6245b230c78a2c8ab6447a52545b582f476c29adb188cc5
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^2.0.0-next.3#builtin<compat/resolve>":
+"resolve@patch:resolve@^2.0.0-next.3#~builtin<compat/resolve>":
   version: 2.0.0-next.3
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#builtin<compat/resolve>::version=2.0.0-next.3&hash=3388aa"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#~builtin<compat/resolve>::version=2.0.0-next.3&hash=00b1ff"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
-  checksum: a36d174b5e1b72eb9d05f2457fde2e91a4954f4480ee693681eca3a423978304d6232443726384ebf54fc4039f1ec8da7e8731383aab4c11704d157d5bcf5031
+  checksum: 8/eb88c5e53843bc022215744307a5f5664446c0fdb8f43c33456dce98d5ee6b3162d0cd0a177bb6f1c3d5c8bf01391ac7ab2de0e936e35318725fb40ba7efdaf6
   languageName: node
   linkType: hard
 
@@ -49078,13 +49059,13 @@ typescript@^4.2.4:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.2.4#builtin<compat/typescript>":
+"typescript@patch:typescript@^4.2.4#~builtin<compat/typescript>":
   version: 4.2.4
-  resolution: "typescript@patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"
+  resolution: "typescript@patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=32657b"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 3be44317593182e8ce494c114e7ad9b0bb2553a22f3085cc6da4f0a36912c20850daa9be4c898af2ab6fc8b12f430c1c9e46ac715721867cd38643f2350d3ef9
+  checksum: 8/91772e5fc70895a8f645837cb91d14af95a11b173043ed0dcf12c1069f9dcf5c3c82bc7212c217c9a2cb488900dd2cda3f40f543bed5d149428df13c90c10098
   languageName: node
   linkType: hard
 
@@ -53400,7 +53381,7 @@ typescript@^4.2.4:
     connect: ^3.7.0
     connect-flash: ^0.1.1
     connect-history-api-fallback: ^1.6.0
-    connect-mongo: ^4.4.1
+    connect-mongo: ^4.6.0
     connect-redis: ^5.2.0
     consolidate: ^0.16.0
     content-type: ^1.0.4
@@ -53787,8 +53768,8 @@ typescript@^4.2.4:
     mockjs: ^1.1.0
     moment: ^2.29.1
     moment-timezone: ^0.5.33
-    mongodb: ^3.6.6
-    mongoose: ^5.12.6
+    mongodb: ^3.6.10
+    mongoose: ^5.13.3
     morgan: ^1.10.0
     mqtt: ^4.2.6
     ms: ^2.1.3
